@@ -16,10 +16,7 @@ export class AssetLoader {
    */
   static loadSprite(reference) {
     let resource = PIXI.loader.resources[reference];
-    if (!resource) {
-      return false;
-    }
-    return new Sprite(resource.texture);
+    return (resource) ? new Sprite(resource.texture) : false;
   }
   
 }

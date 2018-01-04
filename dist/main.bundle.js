@@ -43043,10 +43043,7 @@ var AssetLoader = exports.AssetLoader = function () {
      */
     value: function loadSprite(reference) {
       var resource = PIXI.loader.resources[reference];
-      if (!resource) {
-        return false;
-      }
-      return new _Sprite.Sprite(resource.texture);
+      return resource ? new _Sprite.Sprite(resource.texture) : false;
     }
   }]);
 

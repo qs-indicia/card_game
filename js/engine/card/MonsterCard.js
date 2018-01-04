@@ -2,8 +2,8 @@ import { Card } from './Card';
 
 export class MonsterCard extends Card {
 
-  constructor(id, title, description, health, damage) {
-    super(id, title, description);
+  constructor(id, name, description, health, damage) {
+    super(id, name, description);
     this.health = health;
     this.damage = damage;
     this.type = 'Monster';

@@ -1,9 +1,9 @@
 export class Card {
   
-  constructor(id, title, description) {
+  constructor(id, name, description) {
     // TODO: Get the card's image.
     this.id = id;
-    this.title = title;
+    this.name = name;
     this.description = description;
   }
   

@@ -1,6 +1,6 @@
 import * as PIXI from 'pixi.js';
 
-import { AssetLoader } from '../engine/AssetLoader';
+import { AssetLoader } from '../engine/assets/AssetLoader';
 import { Scene } from '../engine/scene/Scene';
 
 export class GameScene extends Scene {
@@ -18,7 +18,6 @@ export class GameScene extends Scene {
   setup() {
     this.player = AssetLoader.loadSprite('assets/images/squirrel.png');
     if (this.player) {
-      this.player.anchor.set(0.5);
       this.player.x = 150;
       this.player.y = 150;
       

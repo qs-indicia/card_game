@@ -8,6 +8,7 @@ export class CardManager {
   }
   
   init() {
+    // TODO: Load cards from a Database.
     let goblinWarriorCard = new MonsterCard(
       1,
       'Goblin Warrior',

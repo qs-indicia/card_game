@@ -1,5 +1,7 @@
 import * as PIXI from 'pixi.js';
 
+import { Sprite } from './Sprite';
+
 export class AssetLoader {
   
   /**
@@ -17,7 +19,7 @@ export class AssetLoader {
     if (!resource) {
       return false;
     }
-    return new PIXI.Sprite(resource.texture);
+    return new Sprite(resource.texture);
   }
   
 }
